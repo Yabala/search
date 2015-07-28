@@ -26,11 +26,12 @@
 <html>
 <head>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
-<h1>SEARCH</h1>
+<h1><i class="fa fa-search"></i> SEARCH</h1>
 
 
 <?php
@@ -45,7 +46,8 @@ $YABALA = new yabala();
 <form name="searchForm" method="post" action="search.php" class="admin">
 
 <div class="admin">
-Seleccionar el repositorio en el cual se buscará:<br /> 
+Seleccionar el repositorio en el cual se buscará:<br />
+<br />
 <select name="repository">
 <?php
 	//Obtener la lista de respositorios disponibles en la instalación local de Yabalá
@@ -68,18 +70,23 @@ DEFINIR LOS CRITERIOS DE BÚSQUEDA Y LUEGO ELEGIR EL BOTÓN "SEARCH" PARA LANZAR L
 &nbsp;
 
 <div class="admin">
+Buscar en campos específicos:<br />
+<br />
 <input type="text" name="clave" value=""><br />
+<br />
 <input type="radio" name="campo" value="-1" checked> Buscar en todos los campos<br>
 <input type="radio" name="campo" value="1"> Buscar en keywords<br />
 <input type="radio" name="campo" value="2"> Buscar en autor<br />
 <input type="radio" name="campo" value="3"> Buscar en url<br />
-<input value="SEARCH" type="submit" />
+<br />
+<input value="SEARCH" type="submit" id="submit" />
 </div>
 
 &nbsp;
 
 <div class="admin">
-Buscar por formato:<br>
+Buscar por formato:<br />
+<br />
 <input type="radio" name="campo" value="0">
 <select name="type" onchange="searchForm.campo.value=0">
 	<option value="">Elegir ...</option>
@@ -93,13 +100,16 @@ Buscar por formato:<br>
 		}
 	?>
 </select>
- <input value="SEARCH" type="submit" />
+<br />
+<br />
+ <input value="SEARCH" type="submit" id="submit" />
 </div>
 
 &nbsp;
 
 <div class="admin">
 Buscar por licencia:<br />
+<br />
 <input type="radio" name="campo" value="4">
 <select name="cc" onchange="searchForm.campo.value=4">
 	<option value="">Elegir ...</option>
@@ -113,7 +123,9 @@ Buscar por licencia:<br />
 		}
 	?>
 </select>
- <input value="SEARCH" type="submit" />
+<br />
+<br />
+ <input value="SEARCH" type="submit" id="submit" />
 </div>
 
 

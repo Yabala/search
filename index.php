@@ -26,19 +26,21 @@
 <html>
 <head>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
-<h1>SEARCH</h1>
+<h1><i class="fa fa-search"></i> SEARCH</h1>
 
 
 <form name="condiciones de uso" method="post" action="admin.php" class="index">
 
 <div class="index">
-Este es un SITIO EN DESARROLLO que no está habilitado para ser usado como un sitio en PRODUCCIÓN, si está de acuerdo con estas condiciones de uso haga clic en el botón "ACEPTO CONDICIONES DE USO".</h3>
+Este es un SITIO EN DESARROLLO que no está habilitado para ser usado como un sitio en PRODUCCIÓN, si está de acuerdo con estas condiciones de uso haga clic en el botón "ACEPTO CONDICIONES DE USO".
+<br /><br />
+<input value="ACEPTO CONDICIONES DE USO" type="submit"  id="submit" />
 </div>
-<input value="ACEPTO CONDICIONES DE USO" type="submit" />
 
 </form>
 

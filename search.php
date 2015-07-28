@@ -26,11 +26,12 @@
 <html>
 <head>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
-<h1>SEARCH</h1>
+<h1><i class="fa fa-search"></i> SEARCH</h1>
 
 <?php
 
@@ -66,7 +67,7 @@ echo "</table>\n";
 echo "&nbsp;\n";
 
 //volver al panel de búsqueda
-echo "<form name='back' method='post' action='admin.php'><input value='VOLVER' type='submit' /></form>";
+echo "<form name='back' method='post' action='admin.php'><input value='VOLVER' type='submit' id='submit'  /></form>";
 
 ?>
 
