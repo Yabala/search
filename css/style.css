@@ -81,6 +81,7 @@ form.admin {
  tr.search, td.search {
     border: 1px solid white;
     text-align: center;
+    font-size: 80%;
 }
 
 
