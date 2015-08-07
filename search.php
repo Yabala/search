@@ -37,13 +37,17 @@
 
 include("../yabala/iyabala.php");
 
+
+
+
 //se define cual debe ser la clave de busqueda
 $clave =  $_POST["clave"];
-if($_POST["campo"]==0) $clave =  $_POST["type"];
-if($_POST["campo"]==4) $clave =  $_POST["cc"];
+if($_POST["campo"]==1) $clave =  $_POST["type"];
+if($_POST["campo"]==5) $clave =  $_POST["cc"];
+
 
 //se define el modo
-if(($_POST["campo"]==0) || ($_POST["campo"]==4)) $modo =  1;
+if(($_POST["campo"]==1) || ($_POST["campo"]==5)) $modo =  1;
 else $modo = 0;
 
 
@@ -53,7 +57,7 @@ $result = $YABALA->select($_POST["repository"], $clave, $_POST["campo"], $modo);
 
 //imprimir el resultado
 echo "<table class='search'>\n";
-echo "<tr class='search'><td class='search'>Formato</td><td class='search'>Keywords</td><td class='search'>Autor</td><td class='search'>Url</td><td class='search'>Licencia</td></tr>";
+echo "<tr class='search'><td class='search'>T&iacute;tulo</td><td class='search'>Formato</td><td class='search'>Keywords</td><td class='search'>Autor</td><td class='search'>Url</td><td class='search'>Licencia</td></tr>";
 foreach ($result as $record) {
 	echo "<tr class='search'>\n";
 	foreach ($record as $fild) {

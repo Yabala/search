@@ -75,9 +75,10 @@ Buscar en campos específicos:<br />
 <input type="text" name="clave" value=""><br />
 <br />
 <input type="radio" name="campo" value="-1" checked> Buscar en todos los campos<br>
-<input type="radio" name="campo" value="1"> Buscar en keywords<br />
-<input type="radio" name="campo" value="2"> Buscar en autor<br />
-<input type="radio" name="campo" value="3"> Buscar en url<br />
+<input type="radio" name="campo" value="0"> Buscar en t&iacute;tulo<br />
+<input type="radio" name="campo" value="2"> Buscar en keywords<br />
+<input type="radio" name="campo" value="3"> Buscar en autor<br />
+<input type="radio" name="campo" value="4"> Buscar en url<br />
 <br />
 <input value="SEARCH" type="submit" id="submit" />
 </div>
@@ -87,8 +88,8 @@ Buscar en campos específicos:<br />
 <div class="admin">
 Buscar por formato:<br />
 <br />
-<input type="radio" name="campo" value="0">
-<select name="type" onchange="searchForm.campo.value=0">
+<input type="radio" name="campo" value="1">
+<select name="type" onchange="searchForm.campo.value=1">
 	<option value="">Elegir ...</option>
 	<?php
 		//Toma la lista de formatos definidos por YABALA
@@ -110,8 +111,8 @@ Buscar por formato:<br />
 <div class="admin">
 Buscar por licencia:<br />
 <br />
-<input type="radio" name="campo" value="4">
-<select name="cc" onchange="searchForm.campo.value=4">
+<input type="radio" name="campo" value="5">
+<select name="cc" onchange="searchForm.campo.value=5">
 	<option value="">Elegir ...</option>
 	<?php
 		//Toma la lista de licencias definidas por YABALA
